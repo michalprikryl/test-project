@@ -1,0 +1,21 @@
+.contract-item {
+    background-color: #dadde3;
+    display: inline-block;
+    vertical-align: top;
+    width: 46.5%;
+    height: 300px;
+    margin: 1% 0 1% 1%;
+    padding: 1%;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+@media (max-width: 900px) {
+    .contract-item {
+        display: block;
+        width: 92%;
+        margin: 2%;
+        padding: 2%;
+    }
+}

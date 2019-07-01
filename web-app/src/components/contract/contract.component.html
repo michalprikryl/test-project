@@ -1,0 +1,6 @@
+<div class='contract-item'>
+    <h1 *ngIf="contract.name">{{ contract.temperatures ? 'Heat' : 'Electricity' }} contract: {{ contract.name }}</h1>
+    <h5 *ngIf="contract.price">Price: {{ contract.price }} eur</h5>
+    <h5 *ngIf="contract.buildingType">Building type: {{ contract.buildingType }}</h5>
+    <h5 *ngIf="contract.temperatures">Temperatures: {{ contract.temperatures.join(' °C, ') }} °C</h5>
+</div>

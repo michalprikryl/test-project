@@ -32,6 +32,13 @@ namespace ContractApi
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseCors(p =>
+            {
+                p.AllowAnyHeader();
+                p.WithMethods("GET");
+                p.WithOrigins("http://localhost:4200");
+            });
+
             app.UseMvc();
         }
     }
