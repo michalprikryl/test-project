@@ -5,7 +5,6 @@ import { HttpClient } from '@angular/common/http';
 import { environment } from '../../environments/environment';
 import { Contract, ElectricityContract, HeatContract } from 'src/models/contract';
 
-
 @Injectable({
     providedIn: 'root'
 })
@@ -22,7 +21,7 @@ export class MainService {
     }
 
     getContract(type : String) : Observable<Contract> {
-        return this.http.get<Contract>(`${environment.api}contract/${type}/1`);
+        return this.http.get<Contract>(`${environment.api}contract/${type}/${Math.floor(Math.random() * 1001)}`);
     }
 
 }
